@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-fucsia: #FF1493;
+  --color-rosa-cha: #FFB6C1;
+  --color-dourado: #D4AF37;
+  --color-branco: #FFFFFF;
+  --color-text: #333333;
+}
+
+body {
+  background-color: #FFF5F8;
+  color: var(--color-text);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-fucsia);
+}
+
+.btn-primary {
+  @apply bg-[#FF1493] text-white py-3 px-6 rounded-full font-semibold shadow-md hover:bg-opacity-90 transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply bg-[#D4AF37] text-white py-3 px-6 rounded-full font-semibold shadow-md hover:bg-opacity-90 transition-all duration-300;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-md p-6 border border-[#FFB6C1] hover:shadow-lg transition-all duration-300;
+}
+
+.container-custom {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.header-gradient {
+  background: linear-gradient(to right, var(--color-fucsia), var(--color-rosa-cha));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-text {
+  color: var(--color-dourado);
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-6 text-center;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 rounded-lg border border-[#FFB6C1] focus:outline-none focus:ring-2 focus:ring-[#FF1493] focus:border-transparent;
+}
+
+.label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.footer {
+  @apply bg-[#FF1493] text-white py-6;
+}
